@@ -1,15 +1,15 @@
-function add(num1:number,num2:number,inter:string,flag:boolean){
-
-    if (flag) {
-        console.log(inter + num1+num2);
-    }
-    return num1+num2;
+const person : { 
+    name :string;
+    age:number;
+    hobies:string[];
+    role:[number,string];
+    }= {
+    name:"blaha",
+    age:21 ,
+    hobies :["bodybuilding","foo"],
+    role :[1,'admin']
 }
 
-const Number1 = 5;
-const Number2=5;
-const flagg = true;
-const phrase = 'reuslt is : ';
+person.role= [5,'lalal'];
 
-
-add(Number1,Number2,phrase,flagg);
+console.log(person.role);
